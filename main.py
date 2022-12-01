@@ -1,5 +1,4 @@
-#Don't remove This Line From Here. @Dev_Arora_0981 | @DevArora0981
-#Github :- Devarora0981 | Devarora0987
+
 from pyrogram import Client, filters
 from pyrogram.types import *
 from pymongo import MongoClient
@@ -11,17 +10,17 @@ import asyncio
 import time
 from datetime import datetime
 
-API_ID = os.environ.get("API_ID", None) 
-API_HASH = os.environ.get("API_HASH", None) 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
-MONGO_URL = os.environ.get("MONGO_URL", None)
-BOT_USERNAME = os.environ.get("BOT_USERNAME") 
-UPDATE_CHNL = os.environ.get("UPDATE_CHNL")
+API_ID = os.environ.get("API_ID", "10043760") 
+API_HASH = os.environ.get("API_HASH", "789721373b7bbd1ffe7081fa15397ba0") 
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+MONGO_URL = os.environ.get("MONGO_URL", "mongodb+srv://Music:Music@cluster0.f9x4i.mongodb.net/Cluster0?retryWrites=true&w=majority")
+BOT_USERNAME = os.environ.get("BOT_USERNAME", "CuteQueenBot") 
+UPDATE_CHNL = os.environ.get("UPDATE_CHNL", "+DllhdM36-tgzMDRl")
 OWNER_ID = os.environ.get("OWNER_ID")
 OWNER_USERNAME = os.environ.get("OWNER_USERNAME")
-SUPPORT_GRP = os.environ.get("SUPPORT_GRP")
-BOT_NAME = os.environ.get("BOT_NAME")
-START_IMG1 = os.environ.get("START_IMG1")
+SUPPORT_GRP = os.environ.get("SUPPORT_GRP", "+DllhdM36-tgzMDRl")
+BOT_NAME = os.environ.get("BOT_NAME", "🦋⃟ᴠͥɪͣᴘͫ⃝🇲iss 🇶𝖚𝖊𝖊𝖓𝄟⃝")
+START_IMG1 = os.environ.get("START_IMG1", "https://telegra.ph/file/613a70c0257608ef1a6fc.jpg")
 START_IMG2 = os.environ.get("START_IMG2")
 START_IMG3 = os.environ.get("START_IMG3")
 START_IMG4 = os.environ.get("START_IMG4")
@@ -236,7 +235,7 @@ ABOUT_BTN = [
            InlineKeyboardButton(text="✨ ʙᴀᴄᴋ ✨", callback_data="BACK"),
       ],
 ]
-SOURCE_READ = f"**ʜᴇʏ, ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴏғ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) ɪs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.**\n**ᴘʟᴇᴀsᴇ ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ & ɢɪᴠᴇ ᴛʜᴇ sᴛᴀʀ ✯**\n**──────────────────**\n**ʜᴇʀᴇ ɪs ᴛʜᴇ [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://github.com/Devarora-0981/Mickey)**\n**──────────────────**\n**ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴀᴛ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_GRP}).\n<b>||©️ @{OWNER_USERNAME}||</b>"
+SOURCE_READ = f"**ʜᴇʏ, ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴏғ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) ɪs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.**\n**ᴘʟᴇᴀsᴇ ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ & ɢɪᴠᴇ ᴛʜᴇ sᴛᴀʀ ✯**\n**──────────────────**\n**ʜᴇʀᴇ ɪs ᴛʜᴇ [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://t.me/+DllhdM36-tgzMDRl)**\n**──────────────────**\n**ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴀᴛ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_GRP}).\n<b>||©️ @{OWNER_USERNAME}||</b>"
 
 ABOUT_READ = f"""
 **➻ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) ɪs ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛ-ʙᴏᴛ.**
@@ -393,7 +392,7 @@ async def ping(client, message: Message):
     ms = (end-start).microseconds / 1000
     await message.reply_photo(
         photo=random.choice(PHOTO),
-        caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n<b>||мαdє ωιтн ❣️ ву [Ꭰev🎋](https://t.me/Dev_Arora_0981)||</b>",
+        caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n<b>||мαdє ωιтн ❣️ ву [Ꭰev🎋](https://t.me/Mr_Nihal9)||</b>",
         reply_markup=InlineKeyboardMarkup(PNG_BTN),
     )
 
